@@ -22,7 +22,7 @@
 
 ## 📥 導入方法
 
-1. リソースパックの `.zip` ファイルをダウンロード
+1. [リソースパックの `.zip` ファイルをダウンロード](https://github.com/Ctyann/AE2guideJP/releases/tag/AE2guide )
 2. Minecraftの `resourcepacks` フォルダに配置
 3. ゲームを起動
 4. 設定 → リソースパックから有効化
