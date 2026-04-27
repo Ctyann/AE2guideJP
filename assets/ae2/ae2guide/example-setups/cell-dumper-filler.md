@@ -14,13 +14,13 @@ navigation:
 <GameScene zoom="6" interactive={true}>
   <ImportStructure src="../assets/assemblies/cell_dumper_filler.snbt" />
 
-<BoxAnnotation color="#dddddd" min="1 1 0" max="2 1.5 2">
-        (1) IOポート：中央のGUIにある矢印ボタンで「ネットワークへ転送」または「ストレージセルへ転送」を切り替え可能。アクセラレーションカード3枚搭載
+<BoxAnnotation color="#dddddd" min="1 1 0" max="2 2 1">
+        (1) ME入出力ポート：中央のGUIにある矢印ボタンで「ネットワークへ転送」または「ストレージセルへ転送」を切り替え可能。アクセラレーションカード3枚搭載
         <ItemImage id="speed_card" scale="2" />
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 0.7 0" max="1 1 1">
-        (2) ストレージバス：デフォルト設定
+        (2) MEストレージバス：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#33dd33" min="0 1 0" max="1 2 1">

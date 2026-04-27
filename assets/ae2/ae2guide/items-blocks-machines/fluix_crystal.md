@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークスクリスタル
+  title: フルーシュクリスタル
   icon: fluix_crystal
   position: 010
 categories:
@@ -10,11 +10,11 @@ item_ids:
 - ae2:fluix_crystal
 ---
 
-# フルークスクリスタル
+# フルーシュクリスタル
 
 <ItemImage id="fluix_crystal" scale="4" />
 
-*「フルークスクリスタルは、ある形態のエネルギーを別の形態へ吸収・変換する独自の能力を持ち、
+*「フルーシュクリスタルは、ある形態のエネルギーを別の形態へ吸収・変換する独自の能力を持ち、
 あらゆるMatter Energy技術の基盤となる」*
 
 AE2のブロック、[デバイス](../ae2-mechanics/devices.md)、およびアイテムにおける主要素材のひとつです。ネザークォーツ、レッドストーン、

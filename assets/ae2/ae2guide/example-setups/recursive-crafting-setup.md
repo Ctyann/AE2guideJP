@@ -22,7 +22,7 @@ navigation:
   <ImportStructure src="../assets/assemblies/recursive_recipe_setup.snbt" />
 
   <BoxAnnotation color="#dddddd" min="1 0 0" max="2 1 1">
-        (1) インターフェース：必要な追加材料（ダイヤモンドとネザーラック）をストックする設定
+        (1) MEインターフェース：必要な追加材料（ダイヤモンドとネザーラック）をストックする設定
         <Row><ItemImage id="minecraft:diamond" scale="2" /> <ItemImage id="minecraft:netherrack" scale="2" /></Row>
   </BoxAnnotation>
 
@@ -32,7 +32,7 @@ navigation:
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="2 0 0" max="2.3 1 1">
-        (3) インポートバス #1：インターフェースが供給するアイテムにフィルタ設定。レッドストーンカード装備。「信号有効時に動作」モード
+        (3) MEインポートバス #1：MEインターフェースが供給するアイテムにフィルタ設定。レッドストーンカード装備。「信号有効時に動作」モード
         <Row>
         <ItemImage id="minecraft:diamond" scale="2" />
         <ItemImage id="minecraft:netherrack" scale="2" />
@@ -41,11 +41,11 @@ navigation:
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="3 1 1" max="4 1.3 2">
-        (4) ストレージバス #1：他のストレージバスより高い優先度に設定（非常に重要）
+        (4) MEストレージバス #1：他のMEストレージバスより高い優先度に設定（非常に重要）
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="3 0 1" max="4 1 2">
-        (5) 分子アセンブラー：ネザライトテンプレート複製用パターンを内蔵
+        (5) 分子組立機：ネザライトテンプレート複製用パターンを内蔵
 
         ![パターン](../assets/diagrams/smithing_template_pattern_small.png)
 
@@ -53,11 +53,11 @@ navigation:
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="2.7 0 1" max="3 1 2">
-        (6) インポートバス #2：デフォルト設定
+        (6) MEインポートバス #2：デフォルト設定
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="1 0 1" max="2 1 1.3">
-        (7) ストレージバス #2：「ネザライト強化テンプレート」にフィルタ設定。もう一方より低い優先度
+        (7) MEストレージバス #2：「ネザライト強化テンプレート」にフィルタ設定。もう一方より低い優先度
         <ItemImage id="minecraft:netherite_upgrade_smithing_template" scale="2" />
   </BoxAnnotation>
 
@@ -72,7 +72,7 @@ navigation:
 
 * <ItemLink id="interface" />（1）：追加材料としてダイヤモンドとネザーラックをストックする設定
 * <ItemLink id="level_emitter" />（2）：「ネザライト強化テンプレート」に設定し、「クラフト時にレッドストーン出力」に設定
-* 最初の<ItemLink id="import_bus" />（3）：インターフェースが供給するアイテムにフィルタ設定。レッドストーンカード装備。「信号有効時に動作」
+* 最初の<ItemLink id="import_bus" />（3）：MEインターフェースが供給するアイテムにフィルタ設定。レッドストーンカード装備。「信号有効時に動作」
 * 最初の<ItemLink id="storage_bus" />（4）：もう一方より**高い**[優先度](../ae2-mechanics/import-export-storage.md#storage-priority)に設定
 * <ItemLink id="molecular_assembler" />（5）：テンプレート複製パターンを内蔵し、初期状態でテンプレートを1つ手動投入
 
@@ -85,11 +85,11 @@ navigation:
 
 1. <ItemLink id="level_emitter" />は<ItemLink id="crafting_card" />により[パターン](../items-blocks-machines/patterns.md)として振る舞い、「ネザライト強化テンプレート」が[端末](../items-blocks-machines/terminals.md)で自動クラフト可能になる
 2. クラフト要求（プレイヤーまたはシステム）を受けるとレベルエミッタがオンになる
-3. 最初の<ItemLink id="import_bus" />がレベルエミッタにより有効化され、インターフェースの材料を引き出す
-4. それらの材料を保存できるネットワーク上の唯一のストレージはアセンブラー側のストレージバスである
+3. 最初の<ItemLink id="import_bus" />がレベルエミッタにより有効化され、MEインターフェースの材料を引き出す
+4. それらの材料を保存できるネットワーク上の唯一のストレージは分子組立機側のMEストレージバスである
 5. <ItemLink id="molecular_assembler" />は材料を受け取り（内部に既にテンプレートを1つ保持した状態で）、クラフトを実行し2つのテンプレートを生成する
 6. 2つ目の<ItemLink id="import_bus" />がテンプレートを1つ回収する
-7. 高優先度のストレージバスがあるため、そのテンプレートはアセンブラーへ戻される
+7. 高優先度のMEストレージバスがあるため、そのテンプレートは分子組立機へ戻される
 8. 2つ目の<ItemLink id="import_bus" />がさらにもう1つテンプレートを回収する
-9. アセンブラーはこれ以上テンプレートを受け取れないため、余ったテンプレートは低優先度ストレージバスへ送られ、インターフェースに入る
+9. 分子組立機はこれ以上テンプレートを受け取れないため、余ったテンプレートは低優先度MEストレージバスへ送られ、MEインターフェースに入る
 10. <ItemLink id="interface" />はテンプレートを保管対象としていないため、それをネットワークへ出力する

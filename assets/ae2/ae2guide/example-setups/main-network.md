@@ -46,7 +46,7 @@ navigation:
     </BoxAnnotation>
 
     <BoxAnnotation color="#33dd33" min="10 9 13" max="11.7 13 14" thickness="0.05">
-        インターフェースを使った自動補充システム。
+        MEインターフェースを使った自動補充システム。
     </BoxAnnotation>
 
     <BoxAnnotation color="#33dd33" min="6 10 12" max="9 12 15" thickness="0.05">

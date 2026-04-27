@@ -11,7 +11,7 @@ navigation:
   <ImportStructure src="../assets/assemblies/meteor_interior.snbt" />
 </GameScene>
 
-隕石はAE2を始める際の出発点です。ここでは重要な素材である、さまざまな種類の[芽生えたサートスブロック](../items-blocks-machines/budding_certus.md)や、中央にある<ItemLink id="mysterious_cube" />を入手できます。
+隕石はAE2を始める際の出発点です。ここでは重要な素材である、さまざまな種類の[芽生えたケルタスブロック](../items-blocks-machines/budding_certus.md)や、中央にある<ItemLink id="mysterious_cube" />を入手できます。
 
 次に何をすべきかについては、[はじめに](../getting-started.md)を参照してください。
 

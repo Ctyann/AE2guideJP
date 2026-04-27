@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークスダスト
+  title: フルーシュダスト
   icon: fluix_dust
   position: 010
 categories:
@@ -11,7 +11,7 @@ item_ids:
 - ae2:fluix_dust
 ---
 
-# フルークスダスト
+# フルーシュダスト
 
 <ItemImage id="fluix_dust" scale="4" />
 

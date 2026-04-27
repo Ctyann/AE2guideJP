@@ -22,7 +22,7 @@ AE2における重要な概念のひとつが「ネットワークストレー�
   <ImportStructure src="../assets/assemblies/import_export_storage.snbt" />
 
   <BoxAnnotation color="#dddddd" min="8 1 1" max="9 1.3 2">
-        インポートバスは、向いているインベントリからネットワークストレージへアイテムを取り込む
+        MEインポートバスは、向いているインベントリからネットワークストレージへアイテムを取り込む
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="8 2 1" max="9 3 1.3">
@@ -30,11 +30,11 @@ AE2における重要な概念のひとつが「ネットワークストレー�
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="7 0 1" max="8 1 2">
-        インターフェースは、内部インベントリのスロットが未設定、または設定より多くアイテムがある場合、その内部インベントリからインポートする。そのためアイテムを押し込んでネットワークへ入れることができる
+        MEインターフェースは、内部インベントリのスロットが未設定、または設定より多くアイテムがある場合、その内部インベントリからインポートする。そのためアイテムを押し込んでネットワークへ入れることができる
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="6 0 1" max="7 1 2">
-        パターンプロバイダーは、内部の返却スロットからインポートする。そのためアイテムを押し込んでネットワークへ入れることができる
+        MEパターンプロバイダーは、内部の返却スロットからインポートする。そのためアイテムを押し込んでネットワークへ入れることができる
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="4 1 1" max="5 2 2">
@@ -42,11 +42,11 @@ AE2における重要な概念のひとつが「ネットワークストレー�
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="3 1 1" max="4 1.3 2">
-        ストレージバスは、接続されたインベントリをネットワークストレージとして使用する
+        MEストレージバスは、接続されたインベントリをネットワークストレージとして使用する
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="1 1 1" max="2 1.3 2">
-        エクスポートバスは、ネットワークストレージから接続先インベントリへアイテムを出力する
+        MEエクスポートバスは、ネットワークストレージから接続先インベントリへアイテムを出力する
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="1 2 1" max="2 3 1.3">
@@ -54,7 +54,7 @@ AE2における重要な概念のひとつが「ネットワークストレー�
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="0 1 1" max="1 2 2">
-        インターフェースは、設定されたスロットがある場合その内部インベントリへエクスポートする。そのためネットワークから取り出すことができる
+        MEインターフェースは、設定されたスロットがある場合その内部インベントリへエクスポートする。そのためネットワークから取り出すことができる
   </BoxAnnotation>
 
   <IsometricCamera yaw="195" pitch="30" />

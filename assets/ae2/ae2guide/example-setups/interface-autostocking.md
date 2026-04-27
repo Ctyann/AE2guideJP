@@ -1,11 +1,11 @@
 ---
 navigation:
   parent: example-setups/example-setups-index.md
-  title: インターフェース自動補充
+  title: MEインターフェース自動補充
   icon: interface
 ---
 
-# インターフェース自動補充
+# MEインターフェース自動補充
 
 「一定量のアイテムを常に在庫として維持し、必要に応じて自動でクラフトさせるにはどうすればいいのか？」という疑問が出ることがあります。
 
@@ -17,12 +17,12 @@ navigation:
   <ImportStructure src="../assets/assemblies/interface_autostocking.snbt" />
 
 <BoxAnnotation color="#dddddd" min="0 0 0" max="2 1 1">
-        (1) インターフェース：設定されたアイテムを常に保持するように設定されている。クラフティングカードを装備している。
+        (1) MEインターフェース：設定されたアイテムを常に保持するように設定されている。クラフティングカードを装備している。
         <ItemImage id="crafting_card" scale="2" />
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 0" max="2 1.3 1">
-        (2) ストレージバス：「入出力モード」が「抽出のみ」に設定されている。
+        (2) MEストレージバス：「入出力モード」が「抽出のみ」に設定されている。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4 0.5 0.5" color="#00ff00">
@@ -40,4 +40,4 @@ navigation:
 ## 動作
 
 1. <ItemLink id="interface" /> が設定されたアイテムを[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)から必要量取得できない場合、（かつ <ItemLink id="crafting_card" /> がある場合）、ネットワークの[自動クラフト](../ae2-mechanics/autocrafting.md)に対して不足分のクラフト要求を行う。
-2. <ItemLink id="storage_bus" /> はネットワークがインターフェースの内部在庫にアクセスできるようにする。
+2. <ItemLink id="storage_bus" /> はネットワークがMEインターフェースの内部在庫にアクセスできるようにする。

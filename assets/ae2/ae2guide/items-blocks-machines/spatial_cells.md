@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: 空間セル
+  title: 空間ストレージセル
   icon: spatial_storage_cell_128
   position: 410
 categories:
@@ -30,7 +30,7 @@ item_ids:
 
 [ストレージセル](../items-blocks-machines/storage_cells.md)とは異なり、空間セルは一度使用すると再フォーマットできません。
 
-繰り返しますが、**空間セルは使用後にリセット・再フォーマット・サイズ変更を行うことはできません。**異なるサイズを使用したい場合は新しいセルを作成してください。
+繰り返しますが、**空間セルは使用後にリセット・再フォーマット・サイズ変更を行うことはできません。** 異なるサイズを使用したい場合は新しいセルを作成してください。
 
 ## レシピ
 

@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークスブロック
+  title: フルーシュブロック
   icon: fluix_block
   position: 010
 categories:
@@ -10,7 +10,7 @@ item_ids:
 - ae2:fluix_block
 ---
 
-# フルークスブロック
+# フルーシュブロック
 
 <BlockImage id="fluix_block" scale="8" />
 

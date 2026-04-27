@@ -14,7 +14,7 @@ item_ids:
 
 <BlockImage id="spatial_pylon" p:powered_on="true" scale="8" />
 
-空間パイロンは[空間I/O](../ae2-mechanics/spatial-io.md)において、空間フィールドを生成し、影響を受ける体積を定義するために使用されます。
+空間パイロンは[空間入出力](../ae2-mechanics/spatial-io.md)において、空間フィールドを生成し、影響を受ける体積を定義するために使用されます。
 
 パイロンの連続した1本のラインごとに1つの[チャンネル](../ae2-mechanics/channels.md)を消費します。
 

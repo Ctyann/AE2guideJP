@@ -10,16 +10,16 @@ item_ids:
 - ae2:import_bus
 ---
 
-# インポートバス
+# MEインポートバス
 
 <GameScene zoom="8" background="transparent">
 <ImportStructure src="../assets/blocks/import_bus.snbt" />
 </GameScene>
 
-インポートバスは接触しているインベントリからアイテムや流体(およびアドオンによって追加されたその他のもの)を取り出し、
+MEインポートバスは接触しているインベントリからアイテムや流体(およびアドオンによって追加されたその他のもの)を取り出し、
 [ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へ送り込みます。
 
-ラグ軽減のため、インポートバスが最近何も搬入していない場合、ある種の
+ラグ軽減のため、MEインポートバスが最近何も搬入していない場合、ある種の
 「スリープモード」に入り低速で動作します。そして何かの搬入に成功すると復帰し、最大速度(毎秒4回動作)まで加速します。
 
 これは[ケーブルサブパーツ](../ae2-mechanics/cable-subparts.md)です。
@@ -35,7 +35,7 @@ item_ids:
 
 ## アップグレード
 
-インポートバスは以下の[アップグレード](upgrade_cards.md)に対応しています。
+MEインポートバスは以下の[アップグレード](upgrade_cards.md)に対応しています。
 
 *   <ItemLink id="capacity_card" /> フィルタースロット数を増やします
 *   <ItemLink id="speed_card" /> 1回の動作で移動する量を増やします

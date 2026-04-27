@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークスツール
+  title: フルーシュツール
   icon: fluix_pickaxe
   position: 410
 categories:
@@ -14,7 +14,7 @@ item_ids:
 - ae2:fluix_sword
 ---
 
-# フルークスツール
+# フルーシュツール
 
 <Row>
   <ItemImage id="fluix_axe" scale="4" />
@@ -28,9 +28,9 @@ item_ids:
   <ItemImage id="fluix_sword" scale="4" />
 </Row>
 
-[フルークス](fluix_crystal.md)ツールは鉄ツールに近く、耐久値は3倍で、攻撃力と採掘速度がわずかに高くなっています。
+[フルーシュ](fluix_crystal.md)ツールは鉄ツールに近く、耐久値は3倍で、攻撃力と採掘速度がわずかに高くなっています。
 
-すべてのフルークスツールは、少なくとも幸運/ドロップ増加Iが付与されているかのように動作し、エンチャントテーブルを入手する前に役立ちます。
+すべてのフルーシュツールは、少なくとも幸運/ドロップ増加Iが付与されているかのように動作し、エンチャントテーブルを入手する前に役立ちます。
 
 <ItemLink id="fluix_upgrade_smithing_template" />を作成する必要があります
 

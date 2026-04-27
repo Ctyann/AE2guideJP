@@ -21,11 +21,11 @@ navigation:
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 0" max="1 1.3 1">
-        (2) インポートバス：デフォルト設定
+        (2) MEインポートバス：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 1 0" max="2 1.3 1">
-        (3) ストレージバス：デフォルト設定
+        (3) MEストレージバス：デフォルト設定
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4 0.5 0.5" color="#00ff00">

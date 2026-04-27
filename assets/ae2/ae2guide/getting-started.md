@@ -19,11 +19,11 @@ navigation:
 Applied Energistics 2を始めるには、まず[隕石](ae2-mechanics/meteorites.md)を見つける必要があります。これらは比較的一般的で、地形に大きな穴を残す傾向があるため、旅の途中で見かけたことがあるかもしれません。
 もし見つけていない場合は、<ItemLink id="meteorite_compass" />をクラフトすると、最寄りの<ItemLink id="mysterious_cube" />の方向を指し示してくれます。
 
-隕石を見つけたら、その中心部を掘り進めてください。そこには、様々な種類のケルタスクォーツの塊、ケルタスクォーツバッド、[芽生えたケルタスブロック](items-blocks-machines/budding_certus.md)、そして中心にはミステリアスキューブが見つかります。
+隕石を見つけたら、その中心部を掘り進めてください。そこには、様々な種類のケルタスクォーツの塊、ケルタスクォーツの割れ目、[芽生えたケルタスブロック](items-blocks-machines/budding_certus.md)、そして中心にはミステリアスキューブが見つかります。
 
 ケルタスクォーツの塊や見つけたケルタスクォーツブロックを採掘してください。また、芽生えたケルタスブロックもシルクタッチなしで採掘できますが、1段階劣化します。
 
-完璧な芽生えたケルタスを破壊しないでください。シルクタッチを使っても劣化して欠陥のある芽生えたケルタスになり、元に戻すことはできません。
+完璧な芽生えたケルタスを破壊しないでください。シルクタッチを使っても劣化して傷ついた芽生えたケルタスになり、元に戻すことはできません。
 
 また、隕石の中心にあるミステリアスキューブを採掘して、4つのインスクライバープレスを手に入れましょう。
 
@@ -33,7 +33,7 @@ Applied Energistics 2を始めるには、まず[隕石](ae2-mechanics/meteorite
 <ImportStructure src="assets/assemblies/budding_certus_1.snbt" />
 </GameScene>
 
-ケルタスクォーツバッドは、[芽生えたケルタスブロック](items-blocks-machines/budding_certus.md)からアメジストのように芽を出します。成長が完了していないバッドを破壊すると、<ItemLink id="certus_quartz_dust" />が1つドロップし、フォーチュンの影響を受けません。完全に成長した塊を破壊すると、<ItemLink id="certus_quartz_crystal" />が4つドロップし、フォーチュンでその数が増加します。
+ケルタスクォーツの割れ目は、[芽生えたケルタスブロック](items-blocks-machines/budding_certus.md)からアメジストのように芽を出します。成長が完了していない割れ目を破壊すると、<ItemLink id="certus_quartz_dust" />が1つドロップし、幸運の影響を受けません。完全に成長した塊を破壊すると、<ItemLink id="certus_quartz_crystal" />が4つドロップし、幸運でその数が増加します。
 
 芽生えたケルタスブロックには、完璧な、傷ついた、欠けた、壊れかけの4つの段階があります。
 
@@ -42,13 +42,13 @@ Applied Energistics 2を始めるには、まず[隕石](ae2-mechanics/meteorite
 <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-バッドが成長するたびに、芽生えたブロックは1段階劣化する可能性があり、最終的には普通のケルタスクォーツブロックになります。これらは修復可能であり、新しい芽生えたブロックを作成するには、芽生えたブロック（またはケルタスクォーツブロック）を<ItemLink id="charged_certus_quartz_crystal" />と一緒に水に投げ入れます。
+割れ目が成長するたびに、芽生えたブロックは1段階劣化する可能性があり、最終的には普通のケルタスクォーツブロックになります。これらは修復可能であり、新しい芽生えたブロックを作成するには、芽生えたブロック（またはケルタスクォーツブロック）を<ItemLink id="charged_certus_quartz_crystal" />と一緒に水に投げ入れます。
 
 <RecipeFor id="damaged_budding_quartz" />
 
 完璧な芽生えたケルタスブロックは劣化せず、無限にケルタスを生成します。ただし、クラフトやシルクタッチで移動させることはできません。（[空間ストレージ](ae2-mechanics/spatial-io.md)を使用すれば移動可能です）
 
-ケルタスクォーツバッドは非常にゆっくりと成長しますが、<ItemLink id="growth_accelerator" />を隣接して配置することで、このプロセスを大幅に加速できます。これを最初の優先事項としていくつか作成してください。
+ケルタスクォーツの割れ目は非常にゆっくりと成長しますが、<ItemLink id="growth_accelerator" />を隣接して配置することで、このプロセスを大幅に加速できます。これを最初の優先事項としていくつか作成してください。
 
 <GameScene zoom="4" background="transparent">
 <ImportStructure src="assets/assemblies/budding_certus_2.snbt" />
@@ -59,9 +59,9 @@ Applied Energistics 2を始めるには、まず[隕石](ae2-mechanics/meteorite
 
 ケルタスを自動で収穫する方法は[こちら](example-setups/simple-certus-farm.md)で説明されています。
 
-## フルイックスについての簡単な説明
+## フルーシュについての簡単な説明
 
-もう1つ必要な素材はフルイックスで、これは成長アクセラレータを作る際にすでに出会っています。フルイックスは、チャージドケルタス、レッドストーン、ネザークォーツを水に投げ入れることで作成されます。これを自動化する方法は「読者への課題」として残されています。
+もう1つ必要な素材はフルーシュで、これは成長アクセラレータを作る際にすでに出会っています。フルーシュは、チャージドケルタス、レッドストーン、ネザークォーツを水に投げ入れることで作成されます。これを自動化する方法は「読者への課題」として残されています。
 
 <ItemLink id="charger" />は<ItemLink id="charged_certus_quartz_crystal" />を生成するために必要です。まだ作成していない場合は作成してください。
 

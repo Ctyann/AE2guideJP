@@ -28,25 +28,25 @@ navigation:
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3 1.1 0.1" max="3.2 1.9 0.9">
-        (2) インターフェース：デフォルト設定
+        (2) MEインターフェース：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.1 1.1 0.8" max="3.9 1.9 1">
-        (3) ストレージバス #1：デフォルト設定
+        (3) MEストレージバス #1：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="4.05 1.05 0.8" max="4.95 1.95 1">
-        (4) フォーメーションプレーン：バケツをブラックリスト（インバートカード使用）
+        (4) ME形成プレーン：バケツをブラックリスト（インバートカード使用）
         <Row><ItemImage id="minecraft:bucket" scale="2" /><ItemImage id="inverter_card" scale="2" /></Row>
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.2 2 1.2" max="3.8 2.2 1.8">
-        (5) インポートバス：バケツをブラックリスト（インバートカード使用）
+        (5) MEインポートバス：バケツをブラックリスト（インバートカード使用）
         <Row><ItemImage id="minecraft:bucket" scale="2" /><ItemImage id="inverter_card" scale="2" /></Row>
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2.1 2 0.1" max="2.9 2.2 0.9">
-        (6) ストレージバス #2：デフォルト設定
+        (6) MEストレージバス #2：デフォルト設定
   </BoxAnnotation>
 
 <DiamondAnnotation pos="0 1.5 0.5" color="#00ff00">
@@ -70,8 +70,8 @@ navigation:
 ## 動作原理
 
 1. <ItemLink id="pattern_provider" />が材料を<ItemLink id="interface" />へ送信します
-   （実際には最適化によりストレージバスやフォーメーションプレーンを経由して直接処理され、インターフェースを通過しない場合があります）
-2. [パイプサブネット](pipe-subnet.md#providing-to-multiple-places)と<ItemLink id="formation_plane" />の仕組みにより、バケツは<ItemLink id="minecraft:dispenser" />へ送られ、同時にフォーメーションプレーンが液体を設置します
+   （実際には最適化によりMEストレージバスやME形成プレーンを経由して直接処理され、MEインターフェースを通過しない場合があります）
+2. [パイプサブネット](pipe-subnet.md#providing-to-multiple-places)と<ItemLink id="formation_plane" />の仕組みにより、バケツは<ItemLink id="minecraft:dispenser" />へ送られ、同時にME形成プレーンが液体を設置します
 3. <ItemLink id="minecraft:comparator" />がディスペンサー内のバケツを検出し、ディスペンサーを作動させると同時にパターンプロバイダをロックします
 4. ディスペンサーが液体をバケツで回収し、満たされたバケツになります
 5. <ItemLink id="import_bus" />がディスペンサーからバケツを回収し、<ItemLink id="storage_bus" />経由でメインネットワークへ戻します

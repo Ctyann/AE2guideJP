@@ -17,7 +17,7 @@ navigation:
   <ImportStructure src="../assets/assemblies/level_emitter_autostocking.snbt" />
 
   <BoxAnnotation color="#dddddd" min="1 1 0" max="2 1.3 1">
-        (1) エクスポートバス：対象アイテムにフィルタされている。レッドストーンカードとクラフティングカードを装備。
+        (1) MEエクスポートバス：対象アイテムにフィルタされている。レッドストーンカードとクラフティングカードを装備。
         レッドストーンモードは「信号時に動作」、クラフト挙動は「既存在庫を使用しない」。
         <Row><ItemImage id="redstone_card" scale="2" /> <ItemImage id="crafting_card" scale="2" /></Row>
   </BoxAnnotation>
@@ -27,7 +27,7 @@ navigation:
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="1 0 0" max="2 1 1">
-        (3) インターフェース：デフォルト設定。
+        (3) MEインターフェース：デフォルト設定。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4 0.5 0.5" color="#00ff00">
@@ -48,4 +48,4 @@ navigation:
 
 1. ネットワークの[ストレージ](../ae2-mechanics/import-export-storage.md)内の対象アイテム量が、<ItemLink id="level_emitter" />で指定した数量を下回ると、レベルエミッターがレッドストーン信号を出力する。
 2. レッドストーン信号を受けた <ItemLink id="export_bus" /> は（<ItemLink id="crafting_card" /> の効果と「在庫を使用しない」設定により）ネットワークの[自動クラフト](../ae2-mechanics/autocrafting.md)へ不足分の作成を要求し、その後アイテムをエクスポートする。
-3. アイテムが <ItemLink id="interface" /> に入ると、インターフェースはそれをネットワークストレージへ送る。
+3. アイテムが <ItemLink id="interface" /> に入ると、MEインターフェースはそれをネットワークストレージへ送る。

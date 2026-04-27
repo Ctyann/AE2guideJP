@@ -56,7 +56,7 @@ item_ids:
 
 ストレージセルは、Applied Energisticsにおける主要なストレージ手段のひとつです。<ItemLink id="drive" />や<ItemLink id="chest" />に挿入して使用します。
 
-容量（バイトおよびタイプ）については[Bytes and Types](../ae2-mechanics/bytes-and-types.md)を参照してください。
+容量（バイトおよびタイプ）については[バイトとタイプ](../ae2-mechanics/bytes-and-types.md)を参照してください。
 
 セルの中身が空であれば、手に持った状態でシフト＋右クリックすることで、ストレージコンポーネントをハウジングから取り外すことができます。
 
@@ -80,7 +80,7 @@ item_ids:
 
 ## パーティショニング
 
-セルは、ストレージバスと同様に特定のアイテムのみを受け入れるようフィルタリングできます。これは<ItemLink id="cell_workbench" />で設定します。
+セルは、MEストレージバスと同様に特定のアイテムのみを受け入れるようフィルタリングできます。これは<ItemLink id="cell_workbench" />で設定します。
 
 アイテムは実際に所持していなくても、JEI/REIからスロットへドラッグして設定可能です。
 

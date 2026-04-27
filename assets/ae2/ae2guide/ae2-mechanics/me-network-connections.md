@@ -72,7 +72,7 @@ navigation:
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-これもまた1つのネットワークです。なぜなら[ケーブル](../items-blocks-machines/cables.md)の色はネットワーク接続には関係がなく、異なる色同士が接続されないという点だけが違いです。すべての色はフルクシ（または「無色」）ケーブルに接続できます。
+これもまた1つのネットワークです。なぜなら[ケーブル](../items-blocks-machines/cables.md)の色はネットワーク接続には関係がなく、異なる色同士が接続されないという点だけが違いです。すべての色はフルーシュ（または「無色」）ケーブルに接続できます。
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/actually_1_network_2.snbt" />
@@ -96,11 +96,11 @@ navigation:
   <ImportStructure src="../assets/assemblies/ore_fortuner.snbt" />
 
   <BoxAnnotation color="#915dcd" min="0 0 2" max="3 1 3">
-        ネットワーク1：パイプサブネットのように機能し、インポートバスがフォーメーションプレーン経由で鉱石ブロックを扱えるよう制限する
+        ネットワーク1：パイプサブネットのように機能し、MEインポートバスがME形成プレーン経由で鉱石ブロックを扱えるよう制限する
   </BoxAnnotation>
 
   <BoxAnnotation color="#5CA7CD" min="0 0 0" max="3 1 1">
-        ネットワーク2：別のパイプサブネットとして機能し、アニヒレーションプレーンがフォーチュン後の鉱石をメインネットワークではなくバレルに格納するよう制限する。またメインネットワークのチャンネルを消費しない
+        ネットワーク2：別のパイプサブネットとして機能し、ME消滅プレーンが幸運後の鉱石をメインネットワークではなく樽に格納するよう制限する。またメインネットワークのチャンネルを消費しない
   </BoxAnnotation>
 
   <BoxAnnotation color="#82CD5C" min="2 0 1" max="4 1 2">

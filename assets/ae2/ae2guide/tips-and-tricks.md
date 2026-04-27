@@ -12,7 +12,7 @@ navigation:
 * ズームや注釈の表示/非表示ボタンがあるガイドブックのシーンは回転やズームが可能です
 * ネットワークを木構造に保ち、ループを避ける
 * [デバイス](ae2-mechanics/devices.md)を8つ以下のグループにまとめて配置する。ただし、[チャンネル](ae2-mechanics/channels.md)がネットワーク内でどのようにルートされるかを深く理解している場合を除く
-* 1種類の木材を選び、それをすべての[パターン](items-blocks-machines/patterns.md)で使用する。はい、パターンでの代替を有効にすることは時々機能しますが、同じ木材タイプを一貫して使用することで手間が大幅に減ります。
+* 1種類の木材を選び、それをすべての[パターン](items-blocks-machines/patterns.md)で使用する。パターンでの代替を有効にすることは時々機能しますが、同じ木材タイプを一貫して使用することで手間が大幅に減ります。
 * <ItemLink id="pattern_access_terminal" />内で[パターン](items-blocks-machines/patterns.md)を縦に並べるか、[プロバイダー](items-blocks-machines/pattern_provider.md)間でパターンを分配して、レシピを並行して実行できるようにする
 * [エネルギーセル](items-blocks-machines/energy_cells.md)を追加して、ネットワークが電力スパイクに対応できるようにする
 * <ItemLink id="condenser" />で水を使用できる

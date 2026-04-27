@@ -26,24 +26,24 @@ navigation:
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2.1 2 0.1" max="2.9 2.2 0.9">
-        (2) インターフェース：デフォルト設定
+        (2) MEインターフェース：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.1 2 1.1" max="3.9 2.2 1.9">
-        (3) ストレージバス #1：デフォルト設定
+        (3) MEストレージバス #1：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="4.05 1.05 0.8" max="4.95 1.95 1">
-        (4) アニヒレーションプレーン：GUIなし（設定不可）
+        (4) ME消滅プレーン：GUIなし（設定不可）
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.2 1.2 0.8" max="3.8 1.8 1">
-        (5) インポートバス：バケツにフィルタリング
+        (5) MEインポートバス：バケツにフィルタリング
         <ItemImage id="minecraft:bucket" scale="2" />
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3 1.1 0.1" max="3.2 1.9 0.9">
-        (6) ストレージバス #2：デフォルト設定
+        (6) MEストレージバス #2：デフォルト設定
   </BoxAnnotation>
 
 <DiamondAnnotation pos="0 1.5 0.5" color="#00ff00">
@@ -66,7 +66,7 @@ navigation:
 ## 動作原理
 
 1. <ItemLink id="pattern_provider" />が材料を<ItemLink id="interface" />へ送信します
-   （実際には最適化により、ストレージバス経由でプロバイダの拡張として直接渡されるため、インターフェースを経由しない場合があります）
+   （実際には最適化により、MEストレージバス経由でプロバイダの拡張として直接渡されるため、MEインターフェースを経由しない場合があります）
 2. [パイプサブネット](pipe-subnet.md#providing-to-multiple-places)の仕組みにより、バケツは<ItemLink id="minecraft:dispenser" />へ到達します
 3. <ItemLink id="minecraft:comparator" />がディスペンサー内のバケツを検出し、それによりディスペンサーを作動させると同時にパターンプロバイダをロックします
 4. ディスペンサーがバケツから液体を排出し、空のバケツが残ります

@@ -7,22 +7,22 @@ navigation:
 
 # アイテム/流体「パイプ」サブネット
 
-AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよび/または流体パイプを擬似的に再現するシンプルな方法です。要するに、アイテムや流体パイプとして使えるあらゆる用途に利用できます。
+AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテム/流体パイプを擬似的に再現するシンプルな方法です。要するに、アイテムや流体パイプとして使えるあらゆる用途に利用できます。
 これには、クラフト結果を<ItemLink id="pattern_provider" />へ返送する用途も含まれます。
 
 一般的に、これを実現する方法は2種類あります。
 
-## インポートバス → ストレージバス
+## MEインポートバス → MEストレージバス
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/import_storage_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        (1) インポートバス：フィルター可能
+        (1) MEインポートバス：フィルター可能
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        (2) ストレージバス：フィルター可能。これ（および目的地にしたい他のストレージバス）はネットワーク上で唯一のストレージである必要があります。
+        (2) MEストレージバス：フィルター可能。これ（および目的地にしたい他のMEストレージバス）はネットワーク上で唯一のストレージである必要があります。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#00ff00">
@@ -37,22 +37,22 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
 </GameScene>
 
 ソース側のインベントリにある<ItemLink id="import_bus" /> (1) がアイテムまたは流体を取り込み、[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へ格納しようとします。
-このサブネットである理由は、ネットワーク上に存在する唯一のストレージが<ItemLink id="storage_bus" /> (2) だからです（そのためメインネットワークではなくサブネットになります）。
+サブネットである理由は、ネットワーク上に存在する唯一のストレージが<ItemLink id="storage_bus" /> (2) だからです（そのためメインネットワークではなくサブネットになります）。
 結果として、アイテムまたは流体は目的地のインベントリへ配置されます。つまり転送が行われます。エネルギーは<ItemLink id="quartz_fiber" />によって供給されます。
-インポートバスとストレージバスの両方はフィルター可能ですが、設定しない場合はアクセス可能なものすべてを転送します。
-この構成は複数のインポートバスおよび複数のストレージバスにも対応しています。
+MEインポートバスとMEストレージバスの両方はフィルター可能ですが、設定しない場合はアクセス可能なものすべてを転送します。
+この構成は複数のMEインポートバスおよび複数のMEストレージバスにも対応しています。
 
-## ストレージバス → エクスポートバス
+## MEストレージバス → MEエクスポートバス
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/storage_export_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        (1) ストレージバス：フィルター可能。これ（および供給元にしたい他のストレージバス）はネットワーク上で唯一のストレージである必要があります。
+        (1) MEストレージバス：フィルター可能。これ（および供給元にしたい他のMEストレージバス）はネットワーク上で唯一のストレージである必要があります。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        (2) エクスポートバス：フィルター必須
+        (2) MEエクスポートバス：フィルター必須
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#00ff00">
@@ -67,22 +67,22 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
 </GameScene>
 
 目的地インベントリ側の<ItemLink id="export_bus" />は、フィルターに含まれるアイテムを[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)から引き出そうとします。
-このサブネットである理由は、ネットワーク上に存在する唯一のストレージが<ItemLink id="storage_bus" />だからです。
+サブネットである理由は、ネットワーク上に存在する唯一のストレージが<ItemLink id="storage_bus" />だからです。
 その結果、アイテムまたは流体はソースインベントリから引き出され転送されます。エネルギーは<ItemLink id="quartz_fiber" />によって供給されます。
-エクスポートバスはフィルター必須であるため、この構成はフィルター設定がある場合のみ動作します。
-この構成は複数のストレージバスおよび複数のエクスポートバスにも対応しています。
+MEエクスポートバスはフィルター必須であるため、この構成はフィルター設定がある場合のみ動作します。
+この構成は複数のMEストレージバスおよび複数のMEエクスポートバスにも対応しています。
 
-## 動作しない構成（インポートバス → エクスポートバス）
+## 動作しない構成（MEインポートバス → MEエクスポートバス）
 
 <GameScene zoom="6" background="transparent">
   <ImportStructure src="../assets/assemblies/import_export_pipe.snbt" />
 
 <BoxAnnotation color="#dd3333" min="3.7 0 0" max="4 1 1">
-        インポートバス：ネットワークにストレージがないため、格納先が存在しません。
+        MEインポートバス：ネットワークにストレージがないため、格納先が存在しません。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dd3333" min="1 0 0" max="1.3 1 1">
-        (2) エクスポートバス：ネットワークにストレージがないため、取り出す対象が存在しません。
+        (2) MEエクスポートバス：ネットワークにストレージがないため、取り出す対象が存在しません。
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 0.5" color="#ff0000">
@@ -96,7 +96,7 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-インポートバスとエクスポートバスだけの構成は動作しません。インポートバスはソースインベントリからアイテムを取り込み、ネットワークストレージへ格納しようとします。一方エクスポートバスはネットワークストレージからアイテムを取り出して目的地へ送ろうとします。しかし、このネットワークには**ストレージが存在しないため**、インポートもエクスポートも成立せず、何も起こりません。
+MEインポートバスとMEエクスポートバスだけの構成は動作しません。MEインポートバスはソースインベントリからアイテムを取り込み、ネットワークストレージへ格納しようとします。一方MEエクスポートバスはネットワークストレージからアイテムを取り出して目的地へ送ろうとします。しかし、このネットワークには**ストレージが存在しないため**、インポートもエクスポートも成立せず、何も起こりません。
 
 ## 1面での入力と出力
 
@@ -107,11 +107,11 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
   <ImportStructure src="../assets/assemblies/import_storage_export_pipe.snbt" />
 
 <BoxAnnotation color="#dddddd" min="4 1 1" max="5 1.3 2">
-        (1) インポートバス：フィルター可能
+        (1) MEインポートバス：フィルター可能
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2 1 1" max="3 1.3 2">
-        (2) ストレージバス：フィルター可能。この（および入出力したい他のストレージバス）はネットワーク上で唯一のストレージである必要があります。
+        (2) MEストレージバス：フィルター可能。この（および入出力したい他のMEストレージバス）はネットワーク上で唯一のストレージである必要があります。
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="2 0 1" max="3 1 2">
@@ -119,7 +119,7 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 1" max="1 1.3 2">
-        (4) エクスポートバス：フィルター必須
+        (4) MEエクスポートバス：フィルター必須
   </BoxAnnotation>
 
 <DiamondAnnotation pos="4.5 0.5 1.5" color="#00ff00">
@@ -133,30 +133,30 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
   <IsometricCamera yaw="195" pitch="30" />
 </GameScene>
 
-## インターフェース
+## MEインターフェース
 
-実は、インポートバスやエクスポートバス以外にも[デバイス](../ae2-mechanics/devices.md)には[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へアイテムを出し入れできるものがあります。
-その代表が<ItemLink id="interface" />です。インターフェースが保管対象として設定していないアイテムが挿入されると、それはネットワークストレージへ送られます。これはインポートバス→ストレージバスの仕組みと同様に利用できます。
-逆に、インターフェースで保管設定されているアイテムはネットワークストレージから引き出されます。これはストレージバス→エクスポートバスと同じ動作です。
-インターフェースは一部のアイテムのみ保管し、他を保管しないように設定できるため、ストレージバスを介してリモートで入出力を制御できます（必要なら）。
+実は、MEインポートバスやMEエクスポートバス以外にも[デバイス](../ae2-mechanics/devices.md)には[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へアイテムを出し入れできるものがあります。
+その代表が<ItemLink id="interface" />です。MEインターフェースが保管対象として設定していないアイテムが挿入されると、それはネットワークストレージへ送られます。これはMEインポートバス→MEストレージバスの仕組みと同様に利用できます。
+逆に、MEインターフェースで保管設定されているアイテムはネットワークストレージから引き出されます。これはMEストレージバス→MEエクスポートバスと同じ動作です。
+MEインターフェースは一部のアイテムのみ保管し、他を保管しないように設定できるため、MEストレージバスを介してリモートで入出力を制御できます（必要なら）。
 
 <GameScene zoom="6" background="transparent">
 <ImportStructure src="../assets/assemblies/interface_pipes.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3.7 0 0" max="4 1 1">
-        インターフェース
+        MEインターフェース
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 1">
-        ストレージバス
+        MEストレージバス
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="3.7 0 2" max="4 1 3">
-        ストレージバス
+        MEストレージバス
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 1 2" max="1 1.3 3">
-        インターフェース
+        MEインターフェース
   </BoxAnnotation>
 
 <IsometricCamera yaw="195" pitch="30" />
@@ -179,17 +179,17 @@ AE2の[デバイス](../ae2-mechanics/devices.md)を使ってアイテムおよ�
 ただし、パターンプロバイダは実際には材料を保持しないため、インポート→ストレージやストレージ→エクスポートの方式は使えません。代わりにプロバイダは隣接インベントリへ直接アイテムを押し出すため、同様にアイテムを受け取れる隣接インベントリが必要です。
 
 そこで登場するのが…<ItemLink id="interface" />です！
-パターンプロバイダを方向付きまたはフラットサブパーツモードにし、かつインターフェースもフラットサブパーツモードにして、ネットワーク接続が成立しないようにしてください。
+パターンプロバイダを方向付きまたはフラットサブパーツモードにし、かつMEインターフェースもフラットサブパーツモードにして、ネットワーク接続が成立しないようにしてください。
 
 <GameScene zoom="6" background="transparent">
 <ImportStructure src="../assets/assemblies/provider_interface_storage.snbt" />
 
 <BoxAnnotation color="#dddddd" min="2.7 0 1" max="3 1 2">
-        インターフェース（フルブロックではなくフラット必須）
+        MEインターフェース（フルブロックではなくフラット必須）
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 0 0" max="1.3 1 4">
-        ストレージバス
+        MEストレージバス
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 0 0" max="1 1 4">

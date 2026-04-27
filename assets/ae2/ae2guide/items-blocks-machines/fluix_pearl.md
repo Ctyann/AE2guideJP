@@ -1,7 +1,7 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークスパール
+  title: フルーシュパール
   icon: fluix_pearl
   position: 010
 categories:
@@ -10,7 +10,7 @@ item_ids:
 - ae2:fluix_pearl
 ---
 
-# フルークスパール
+# フルーシュパール
 
 <ItemImage id="fluix_pearl" scale="4" />
 

@@ -1,21 +1,21 @@
 ---
 navigation:
   parent: items-blocks-machines/items-blocks-machines-index.md
-  title: フルークス研究者 (村人)
+  title: フルーシュ研究者 (村人)
   icon: minecraft:emerald
   position: 310
 categories:
 - tools
 ---
 
-# フルークス研究者
+# フルーシュ研究者
 
 <Row>
 ![Fluix Researcher](../assets/diagrams/ae2_villager.png)
 <BlockImage id="charger" scale="8" />
 </Row>
 
-フルークス研究者は村人の職業です。対応する職業ブロックは<ItemLink id="charger" />です。
+フルーシュ研究者は村人の職業です。対応する職業ブロックは<ItemLink id="charger" />です。
 
 ## 取引
 

@@ -10,7 +10,7 @@ navigation:
 丸石生成機の自動化は簡単で、標準的なバニラの手動丸石生成機に向けて<ItemLink id="annihilation_plane" />を設置するだけです。
 しかしこの方法だけでは、最終的にネットワークが丸石で埋まってしまうため、適切な制御が必要になります。
 
-アンナイレーションプレーンの挙動上（<ItemLink id="import_bus" />のように動作するため）、単純に<ItemLink id="level_emitter" />を<ItemLink id="export_bus" />に向け、<ItemLink id="redstone_card" />を使うだけでは制御できません（ストレージを挟まずにインポートからエクスポートへ直接つなぐことができないためです）。そのため、もう少し回りくどい方法が必要になります。
+ME消滅プレーンの挙動上（<ItemLink id="import_bus" />のように動作するため）、単純に<ItemLink id="level_emitter" />を<ItemLink id="export_bus" />に向け、<ItemLink id="redstone_card" />を使うだけでは制御できません（ストレージを挟まずにインポートからエクスポートへ直接つなぐことができないためです）。そのため、もう少し回りくどい方法が必要になります。
 
 <ItemLink id="toggle_bus" />はレッドストーン信号によってネットワークの一部を接続・切断できますが、そのたびにネットワークが再起動してしまいます。
 ただし簡単な回避策として、これを[サブネットワーク](../ae2-mechanics/subnetworks.md)上に配置すれば、そのサブネットだけを再起動させることができます。
@@ -22,11 +22,11 @@ toggle busは<ItemLink id="quartz_fiber" />を介してサブネットワーク�
   <ImportStructure src="../assets/assemblies/regulated_cobble_gen.snbt" />
 
 <BoxAnnotation color="#dddddd" min="3 2 2" max="7 2.3 3">
-        (1) アンナイレーションプレーン：GUIは存在しませんが、効率や耐久力のエンチャントで消費電力を削減できます
+        (1) ME消滅プレーン：GUIは存在しませんが、効率や耐久力のエンチャントで消費電力を削減できます
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="2 2 2" max="2.3 3 3">
-        (2) ストレージバス：デフォルト設定
+        (2) MEストレージバス：デフォルト設定
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="2.3 2.3 2" max="2.7 2.7 2.3">
@@ -38,7 +38,7 @@ toggle busは<ItemLink id="quartz_fiber" />を介してサブネットワーク�
   </BoxAnnotation>
 
   <BoxAnnotation color="#dddddd" min="1 2 3" max="2 3 2">
-        (5) インターフェース：デフォルト設定
+        (5) MEインターフェース：デフォルト設定
   </BoxAnnotation>
 
 <DiamondAnnotation pos="0 2.5 1.5" color="#00ff00">
@@ -66,4 +66,4 @@ toggle busは<ItemLink id="quartz_fiber" />を介してサブネットワーク�
 2. <ItemLink id="annihilation_plane" />が丸石を破壊する
 3. <ItemLink id="storage_bus" />が丸石を<ItemLink id="interface" />へ格納し、メインネットワークへ送信する
 4. メインネットワーク内の丸石量が設定値を超えると、<ItemLink id="level_emitter" />が信号を停止し、<ItemLink id="toggle_bus" />をオフにする
-5. これによりサブネットワークへの電力供給が遮断され、アンナイレーションプレーンの動作が停止する
+5. これによりサブネットワークへの電力供給が遮断され、ME消滅プレーンの動作が停止する

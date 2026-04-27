@@ -25,16 +25,16 @@ navigation:
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 1 0" max="2 1.3 1">
-        (2) インターフェース：デフォルト設定
+        (2) MEインターフェース：デフォルト設定
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="1 1 0" max="1.3 2 1">
-        (3) ストレージバス #1：石炭にフィルタリング
+        (3) MEストレージバス #1：石炭にフィルタリング
         <ItemImage id="minecraft:coal" scale="2" />
   </BoxAnnotation>
 
 <BoxAnnotation color="#dddddd" min="0 2 0" max="1 2.3 1">
-        (4) ストレージバス #2：石炭をブラックリスト（インバートカード使用）
+        (4) MEストレージバス #2：石炭をブラックリスト（インバートカード使用）
         <Row><ItemImage id="minecraft:coal" scale="2" /><ItemImage id="inverter_card" scale="2" /></Row>
   </BoxAnnotation>
 
@@ -59,10 +59,10 @@ navigation:
 ## 動作原理
 
 1. <ItemLink id="pattern_provider" />が材料を<ItemLink id="interface" />へ送信します
-   （実際には最適化によりストレージバス経由で直接供給され、インターフェースを通らない場合があります）
-2. インターフェースは何も保持しない設定のため、入力を[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へ送ろうとします
-3. サブネット上の唯一のストレージであるストレージバス群がそれを受け取り、かまどの各面へ適切に供給します
-   * 燃料用ストレージバスは側面から燃料スロットへ供給
-   * ブラックリスト側のストレージバスは上面から精錬スロットへ供給
+   （実際には最適化によりMEストレージバス経由で直接供給され、MEインターフェースを通らない場合があります）
+2. MEインターフェースは何も保持しない設定のため、入力を[ネットワークストレージ](../ae2-mechanics/import-export-storage.md)へ送ろうとします
+3. サブネット上の唯一のストレージであるMEストレージバス群がそれを受け取り、かまどの各面へ適切に供給します
+   * 燃料用MEストレージバスは側面から燃料スロットへ供給
+   * ブラックリスト側のMEストレージバスは上面から精錬スロットへ供給
 4. かまどが精錬処理を実行します
 5. 下面からホッパーが結果を回収し、プロバイダの返却スロットへ戻すことでメインネットワークへ返送されます
