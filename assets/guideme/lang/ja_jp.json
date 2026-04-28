@@ -9,7 +9,7 @@
   "guideme.configuration.ignoreTranslatedGuides.tooltip": "現在選択されているUI言語に関係なく、常にGuideMEガイドのオリジナル版を読み込みます",
   "guideme.configuration.showDebugGuiOverlays": "デバッグGUIオーバーレイ",
   "guideme.configuration.title": "GuideME設定",
-  "guideme.guidebook.Blasting": "爆破",
+  "guideme.guidebook.Blasting": "精錬",
   "guideme.guidebook.Close": "閉じる",
   "guideme.guidebook.CloseFullWidthView": "全幅表示を閉じる",
   "guideme.guidebook.CommandOnlyWorksInSinglePlayer": "このコマンドはシングルプレイでのみ動作します。",
